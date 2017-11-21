@@ -8,9 +8,10 @@ logging:
     org.springframework.security: INFO
 
 named-environment:
-  raft:
-    val1: raft_qa1_val1
-    val2: raft_qa1_val2
-  ecif:
-    val1: ecif_qa1_val1
-    val2: ecif_qa1_val2
+  cloud-qa1:
+    raft:
+      val1: raft_val1-qa1
+      val2: raft_val2-qa1
+    ecif:
+      val1: ecif_val1
+      val2: ecif_val2

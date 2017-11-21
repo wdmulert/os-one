@@ -14,7 +14,8 @@ public class HeadGuy {
 
 	@GetMapping("hey")
 	public String rUThere() {
-		String prop = env.getProperty("named-environment.raft.val1");
+		String active = env.getProperty("spring.profiles.active"); // want just one
+		String prop = env.getProperty("named-environment." + active + ".raft.val1");
 		return "Uh, Yeah " + prop;
 	}
 }
